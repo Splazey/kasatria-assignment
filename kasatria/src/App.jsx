@@ -7,9 +7,9 @@ import { CSS3DRenderer, CSS3DObject } from 'three/examples/jsm/renderers/CSS3DRe
 import './App.css'; // Add basic resets and full-width/height styles here
 
 // Read from .env (see .env.example) so real keys never get committed to git
-const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
-const GOOGLE_SHEETS_API_KEY = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY;
-const SPREADSHEET_ID = import.meta.env.VITE_SPREADSHEET_ID;
+const GOOGLE_CLIENT_ID = import.meta.env.GOOGLE_CLIENT_ID;
+const GOOGLE_SHEETS_API_KEY = import.meta.env.GOOGLE_SHEETS_API_KEY;
+const SPREADSHEET_ID = import.meta.env.SPREADSHEET_ID;
 const RANGE = 'Data Template!A2:F'; // Adjust based on your CSV columns (e.g., Name, Image, NetWorth, etc.)
 
 const GRADIENT_STOPS = ['#EF3022', '#F6C242', '#3A5F48'];
