@@ -94,7 +94,7 @@
 
 .about-bubble:hover {
   width: 280px;
-  max-height: 200px;
+  max-height: 360px;
   border-radius: 16px;
 }
 
@@ -135,6 +135,23 @@
   margin: 0;
   font-size: 12px;
   line-height: 1.5;
+}
+
+.about-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  font-family: 'Aleo', serif;
+  font-size: 11px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.about-link:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .instructions {
