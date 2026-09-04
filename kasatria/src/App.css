@@ -1,0 +1,167 @@
+.viz-container {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  background: #000;
+  overflow: hidden;
+}
+
+.viz-mount {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-bar {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 999px;
+}
+
+.menu-btn {
+  font-family: 'Aleo', serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.menu-btn:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.legend {
+  position: absolute;
+  bottom: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 999px;
+  color: #fff;
+  font-family: 'Aleo', serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.legend-bar {
+  width: 140px;
+  height: 8px;
+  border-radius: 4px;
+  /* Same three stops as GRADIENT_STOPS in App.jsx, kept in sync by hand */
+  background: linear-gradient(to right, #EF3022, #F6C242, #3A5F48);
+}
+
+.about-bubble {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 22px;
+  overflow: hidden;
+  width: 44px;
+  max-height: 44px;
+  transition: width 0.3s ease, max-height 0.3s ease, border-radius 0.3s ease;
+}
+
+.about-bubble:hover {
+  width: 280px;
+  max-height: 200px;
+  border-radius: 16px;
+}
+
+.about-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Aleo', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.about-content {
+  padding: 13px 18px 16px 2px;
+  color: #fff;
+  font-family: 'Aleo', serif;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: normal;
+}
+
+.about-bubble:hover .about-content {
+  opacity: 1;
+  transition: opacity 0.2s ease 0.15s;
+}
+
+.about-content h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.about-content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.instructions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  color: #fff;
+  font-family: 'Aleo', serif;
+  font-size: 12px;
+}
+
+.instructions-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.instructions-row svg {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
