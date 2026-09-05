@@ -1,11 +1,17 @@
-const ARRANGEMENTS = ['table', 'sphere', 'double-Helix', 'grid'];
+// [key, label] — key must match a layout name in lib/layouts.js
+const ARRANGEMENTS = [
+  ['table', 'Table'],
+  ['sphere', 'Sphere'],
+  ['helix', 'Double Helix'],
+  ['grid', 'Grid'],
+];
 
 export default function MenuBar({ onSelect }) {
   return (
     <div className="menu-bar">
-      {ARRANGEMENTS.map((name) => (
-        <button key={name} className="menu-btn" onClick={() => onSelect(name)}>
-          {name[0].toUpperCase() + name.slice(1)}
+      {ARRANGEMENTS.map(([key, label]) => (
+        <button key={key} className="menu-btn" onClick={() => onSelect(key)}>
+          {label}
         </button>
       ))}
     </div>
