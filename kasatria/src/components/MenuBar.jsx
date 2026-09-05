@@ -1,4 +1,4 @@
-const ARRANGEMENTS = ['table', 'sphere', 'helix', 'grid'];
+const ARRANGEMENTS = ['table', 'sphere', 'double-Helix', 'grid'];
 
 export default function MenuBar({ onSelect }) {
   return (
