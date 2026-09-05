@@ -94,7 +94,7 @@
 
 .about-bubble:hover {
   width: 280px;
-  max-height: 360px;
+  max-height: 400px;
   border-radius: 16px;
 }
 
