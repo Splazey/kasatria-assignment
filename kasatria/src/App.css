@@ -72,7 +72,7 @@
   height: 8px;
   border-radius: 4px;
   /* Same three stops as GRADIENT_STOPS in App.jsx, kept in sync by hand */
-  background: linear-gradient(to right, #EF3022, #F6C242, #3A5F48);
+  background: linear-gradient(to right, #EF3022, #FDCA35, #3A9F48);
 }
 
 .about-bubble {
